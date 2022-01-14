@@ -23,13 +23,18 @@ function App() {
   const onClickBoton = function(evento){
     // alert("EXPORTAR");
     html2canvas(document.querySelector("#meme")).then(canvas => {
-      document.body.appendChild(canvas)
+      // document.body.appendChild(canvas)
+      let img = canvas.toDataURL("image/png")
+      let link = document.createElement("a");
+      link.download = "meme.png";
+      link.href = img
+      link.click();
   });
   }
 
   return (
     <div className="App">
-      
+      <br/><br/>
       <select onChange={onChangeImagen}>
         <option value="fire">Casa en llamas</option>
         <option value="futurama">Futurama</option>
