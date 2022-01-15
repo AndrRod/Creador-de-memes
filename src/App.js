@@ -45,7 +45,7 @@ function App() {
 
       <p className="parrafo">Elije una imagen para hacer tu meme:</p>
       <select onChange={onChangeImagen}>
-          
+        <option selected="true" disabled="disabled">seleccione una imagen</option>
         <option value="fire">Casa en llamas</option>
         <option value="futurama">Futurama</option>
         <option value="HC">History Channel</option>        
