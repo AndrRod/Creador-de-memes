@@ -93,3 +93,10 @@ body, .meme{
   font-size: 20px;
   color:#ffffff;
 }
+@media screen and (max-width: 700px){
+  .meme span{
+  font-size:30px;
+  }
+}
+
+
