@@ -33,9 +33,20 @@ function App() {
   }
 
   return (
+      
     <div className="App">
       <br/><br/>
+      
+      <div className="meme" id="meme">
+        <span>{linea1}</span><br/>
+        <span>{linea2}</span>
+        
+        <img src={'/img/'+ imagen +'.png'} alt={imagen}/>
+      </div>
+      
+      <p className="parrafo">Elije una imagen para hacer tu meme:</p>
       <select onChange={onChangeImagen}>
+          
         <option value="fire">Casa en llamas</option>
         <option value="futurama">Futurama</option>
         <option value="HC">History Channel</option>        
@@ -44,17 +55,13 @@ function App() {
         <option value="smart">Smart guy</option>
       </select>      
       <br/>
+      <p className="parrafo">Escribe el texto que quieras que tenga tu meme:</p>
       <input onChange={onChangeLinea1} type="text" placeholder="Linea 1"/><br/>
       <input onChange={onChangeLinea2} type="text" placeholder="Linea 2" /><br/>
-      <button onClick={onClickBoton}>Exportar</button>
+      <br/>
 
-      <div className="meme" id="meme">
-        <span>{linea1}</span><br/>
-        <span>{linea2}</span>
-        
-        <img src={'/img/'+ imagen +'.png'} alt={imagen}/>
-      </div>
-      
+      <button className="boton" onClick={onClickBoton}>Exportar</button>
+
 
     </div>
   );
@@ -62,20 +69,3 @@ function App() {
 
 export default App;
  
-
-
-
-// element.style {
-//   color: #FFFFFF;
-//   text-shadow: 0 -1px 4px #000, 0 -2px 10px #000, 0 -10px 20px #000000, 0 -18px 40px #000;
-//   margin-top: 61px;
-//   font-size: 40px;
-//   /* background: #333333; */
-//   /* color: #FFFFFF; */
-//   /* width: 100%; */
-//   /* background: #333333; */
-//   position: absolute;
-//   /* color: white; */
-//   /* text-shadow: 0 0 2px #000000; */
-//   /* border: 2px; */
-// }
