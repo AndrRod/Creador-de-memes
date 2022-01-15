@@ -109,15 +109,19 @@ body, .meme{
   }
   .parrafo {
     font-weight: 500;
+    color:#000000;
     
   }
   .App {
     position:relative;
-    margin: 0%; 
-    
+    margin: 0%;     
     text-align: center;
     border: none;    
   }  
+  body, .meme{
+    background-color: #ffffff;
+  }
+
 }
 
 
