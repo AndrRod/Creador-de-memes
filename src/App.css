@@ -1,11 +1,18 @@
 .App {
   position:relative;
+  margin-top: 2%;
+  margin-left:30%;
+  margin-right:30%;
+  margin-bottom:2%;
+  
+  
   text-align: center;
+  border: solid white;
   
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40vmin; 
   pointer-events: none;
 }
 
@@ -38,23 +45,29 @@
     transform: rotate(360deg);
   }
 }
+
 .meme span{
+    /* Por debajo de 700px */
+
+    
    position: absolute;
    width: 100%;
-   left: 0px;   
-   /* border-color: ; */
-   margin-top: 50px;
-   font-size: 40px;   
+   left: 0px;      
+   /* margin-top: 50px; */
+   margin-top: 7%;
+   font-size: 45px;   
+   /* font-size: 1.5em; */
    font-weight:1000;      
-   color: white;
+   color: white;  
    text-shadow: 3px 2px 3px rgba(255,255,255,.2), 4px 4px 0px #000000;
 }
 .meme span:nth-child(3){
-  margin-top: 380px;
+  /* margin-top: 380px; */
+  margin-top: 75%;
 }
 .meme img{
   width: 100%;
-  width: auto;
+  /* width: auto; */
 }
 body, .meme{
   background-color: #000000;
@@ -63,6 +76,7 @@ body, .meme{
 .boton{
   text-decoration: none;
   padding: 10px;
+  margin-bottom:2%;
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;

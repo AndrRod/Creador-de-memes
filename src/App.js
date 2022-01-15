@@ -39,11 +39,10 @@ function App() {
       
       <div className="meme" id="meme">
         <span>{linea1}</span><br/>
-        <span>{linea2}</span>
-        
+        <span>{linea2}</span>                
         <img src={'/img/'+ imagen +'.png'} alt={imagen}/>
       </div>
-      
+
       <p className="parrafo">Elije una imagen para hacer tu meme:</p>
       <select onChange={onChangeImagen}>
           
