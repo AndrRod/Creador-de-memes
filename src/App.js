@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState} from "react"
 import html2canvas from "html2canvas"
 // import logo from './logo.svg';
 import './App.css';
@@ -40,12 +40,13 @@ function App() {
       <div className="meme" id="meme">
         <span>{linea1}</span><br/>
         <span>{linea2}</span>                
-        <img src={'/img/'+ imagen +'.png'} alt={imagen}/>
+        <img class="card-img" src={'/img/'+ imagen +'.png'} alt={imagen}/>
       </div>
+      <br/>
 
-      <p className="parrafo">Elije una imagen para hacer tu meme:</p>
-      <select onChange={onChangeImagen}>
-        <option selected="true" disabled="disabled">seleccione una imagen</option>
+      <h1 className="parrafo">Elije una imagen para hacer tu meme:</h1>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onChange={onChangeImagen}>
+        <option selected disabled="disabled">seleccione una imagen</option>
         <option value="fire">Casa en llamas</option>
         <option value="futurama">Futurama</option>
         <option value="HC">History Channel</option>        
@@ -55,8 +56,8 @@ function App() {
       </select>      
       <br/>
       <p className="parrafo">Escribe el texto que quieras que tenga tu meme:</p>
-      <input onChange={onChangeLinea1} type="text" placeholder="Linea 1"/><br/>
-      <input onChange={onChangeLinea2} type="text" placeholder="Linea 2" /><br/>
+      <input class="form-control form-control-lg" onChange={onChangeLinea1} type="text" placeholder="Linea 1"/><br/>
+      <input  class="form-control form-control-lg" onChange={onChangeLinea2} type="text" placeholder="Linea 2" /><br/>
       <br/>
 
       <button className="boton" onClick={onClickBoton}>Exportar</button>
